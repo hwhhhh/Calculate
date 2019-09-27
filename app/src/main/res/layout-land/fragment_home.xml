@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_marginBottom="10dp"
+        android:background="@null"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_back"/>
+
+    <Button
+        android:id="@+id/button_daoshu"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="1/x"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_xjiecheng"
+        app:layout_constraintEnd_toStartOf="@id/button_genhao"/>
+
+    <Button
+        android:id="@+id/button_genhao"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="√"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_xx"
+        app:layout_constraintEnd_toStartOf="@id/button_xy"/>
+
+    <Button
+        android:id="@+id/button_xy"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="x^y"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_xxx"
+        app:layout_constraintEnd_toStartOf="@id/button_ce"/>
+
+    <Button
+        android:id="@+id/button_xjiecheng"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="x!"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_e"
+        app:layout_constraintEnd_toStartOf="@id/button_xx"/>
+
+    <Button
+        android:id="@+id/button_xx"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="x²"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_ln"
+        app:layout_constraintEnd_toStartOf="@id/button_xxx"/>
+
+    <Button
+        android:id="@+id/button_xxx"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="x³"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_log"
+        app:layout_constraintEnd_toStartOf="@id/button_7"/>
+
+    <Button
+        android:id="@+id/button_e"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="e"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_sin"
+        app:layout_constraintEnd_toStartOf="@id/button_ln"
+        />
+
+    <Button
+        android:id="@+id/button_ln"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="ln"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_cos"
+        app:layout_constraintEnd_toStartOf="@id/button_log"/>
+
+    <Button
+        android:id="@+id/button_log"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="log"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_tan"
+        app:layout_constraintEnd_toStartOf="@id/button_4"/>
+
+    <Button
+        android:id="@+id/button_brackets_left"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="("
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_brackets_right"/>
+
+    <Button
+        android:id="@+id/button_brackets_right"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text=")"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_pi"/>
+
+    <Button
+        android:id="@+id/button_pi"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="π"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_pm"/>
+
+    <Button
+        android:id="@+id/button_sin"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="sin"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_brackets_left"
+        app:layout_constraintEnd_toStartOf="@id/button_cos"/>
+
+    <Button
+        android:id="@+id/button_cos"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="cos"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_brackets_right"
+        app:layout_constraintEnd_toStartOf="@id/button_tan"/>
+
+    <Button
+        android:id="@+id/button_tan"
+        style="@style/buttonLandStyle"
+        android:textColor="#585858"
+        android:background="@drawable/button_dark_gray"
+        android:text="tan"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@id/button_pi"
+        app:layout_constraintEnd_toStartOf="@id/button_1"/>
+
+    <Button
+        android:id="@+id/button_ce"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="CE"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintEnd_toStartOf="@id/button_div"
+        app:layout_constraintBottom_toTopOf="@id/button_7"
+        />
+
+    <Button
+        android:id="@+id/button_div"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="/"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintEnd_toStartOf="@id/button_mul"
+        app:layout_constraintBottom_toTopOf="@id/button_8"/>
+
+    <Button
+        android:id="@+id/button_7"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="7"
+        app:layout_constraintBottom_toTopOf="@id/button_4"
+        app:layout_constraintEnd_toStartOf="@id/button_8"
+        />
+
+    <Button
+        android:id="@+id/button_8"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="8"
+        app:layout_constraintBottom_toTopOf="@id/button_5"
+        app:layout_constraintEnd_toStartOf="@id/button_9"
+        />
+
+    <Button
+        android:id="@+id/button_9"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="9"
+        app:layout_constraintEnd_toStartOf="@id/button_sub"
+        app:layout_constraintBottom_toTopOf="@id/button_6"/>
+
+    <Button
+        android:id="@+id/button_mul"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="*"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintEnd_toStartOf="@id/button_back"
+        app:layout_constraintBottom_toTopOf="@id/button_9"/>
+
+    <ImageButton
+        android:id="@+id/button_back"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        app:srcCompat="@drawable/ic_delete_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_sub"/>
+
+    <Button
+        android:id="@+id/button_4"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="4"
+        app:layout_constraintEnd_toStartOf="@id/button_5"
+        app:layout_constraintBottom_toTopOf="@id/button_1"/>
+
+    <Button
+        android:id="@+id/button_5"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="5"
+        app:layout_constraintEnd_toStartOf="@id/button_6"
+        app:layout_constraintBottom_toTopOf="@id/button_2"
+        />
+
+    <Button
+        android:id="@+id/button_6"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="6"
+        app:layout_constraintEnd_toStartOf="@id/button_plus"
+        app:layout_constraintBottom_toTopOf="@id/button_3"
+        />
+
+    <Button
+        android:id="@+id/button_sub"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="-"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_plus"
+        />
+    <Button
+        android:id="@+id/button_1"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="1"
+        app:layout_constraintEnd_toStartOf="@id/button_2"
+        app:layout_constraintBottom_toTopOf="@id/button_pm"
+        />
+
+    <Button
+        android:id="@+id/button_2"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="2"
+        app:layout_constraintEnd_toStartOf="@id/button_3"
+        app:layout_constraintBottom_toTopOf="@id/button_0"
+        />
+
+    <Button
+        android:id="@+id/button_3"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="3"
+        app:layout_constraintEnd_toStartOf="@id/button_equal"
+        app:layout_constraintBottom_toTopOf="@id/button_point"
+        />
+
+    <Button
+        android:id="@+id/button_plus"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="+"
+        android:textColor="@color/colorBlue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_equal"
+        />
+
+    <Button
+        android:id="@+id/button_pm"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="±"
+        app:layout_constraintEnd_toStartOf="@id/button_0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/button_0"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@id/button_point"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_point"
+        style="@style/buttonLandStyle"
+        android:background="@drawable/button_gray_background"
+        android:text="."
+        app:layout_constraintRight_toLeftOf="@id/button_equal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button_equal"
+        style="@style/buttonLandStyle"
+        android:layout_height="101dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_blue_background"
+        android:text="="
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

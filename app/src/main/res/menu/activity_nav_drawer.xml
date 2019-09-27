@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="计算器">
+            <menu>
+                <item
+                    android:id="@+id/nav_home"
+                    android:title="@string/menu_home" />
+            </menu>
+        </item>
+    </group>
+
+    <item android:title="转换器">
+        <menu>
+            <item
+                android:id="@+id/nav_volume"
+                android:title="@string/menu_volume" />
+            <item
+                android:id="@+id/nav_length"
+                android:title="@string/menu_length" />
+            <item
+                android:id="@+id/nav_system"
+                android:title="@string/menu_system" />
+        </menu>
+    </item>
+
+</menu>

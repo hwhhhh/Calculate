@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_length">
+        <item>纳米</item>
+        <item>微米</item>
+        <item>毫米</item>
+        <item>厘米</item>
+        <item>米</item>
+        <item>千米</item>
+        <item>英尺</item>
+    </array>
+
+    <array name="array_sys">
+        <item>二进制</item>
+        <item>八进制</item>
+        <item>十进制</item>
+        <item>十六进制</item>
+    </array>
+
+    <array name="array_vol">
+        <item>毫升</item>
+        <item>立方厘米</item>
+        <item>升</item>
+        <item>立方米</item>
+    </array>
+</resources>
