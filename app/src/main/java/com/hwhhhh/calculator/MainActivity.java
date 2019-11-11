@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputType;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -29,6 +31,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.lang.reflect.Method;
 
@@ -72,4 +75,16 @@ public class MainActivity extends AppCompatActivity{
                 || super.onSupportNavigateUp();
     }
 
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.action_help :
+                Toast.makeText(MainActivity.this, "这是帮助选项", Toast.LENGTH_LONG).show();
+                break;
+            case R.id.action_exit :
+                finish();
+                break;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

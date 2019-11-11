@@ -213,10 +213,10 @@ public class SystemFragment extends Fragment implements View.OnClickListener{
         Button button = view.findViewById(id);
         String button_text = button.getText().toString();
 
-        if (id == R.id.vol_btn_ce) {
+        if (id == R.id.sys_btn_ce) {
             expression = "0";
             ctrl_point = true;
-        } else if (id == R.id.vol_btn_point) {
+        } else if (id == R.id.sys_btn_point) {
             if (ctrl_point) {
                 expression += ".";
                 ctrl_point = false;
